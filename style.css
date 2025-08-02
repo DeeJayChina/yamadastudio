@@ -1,0 +1,136 @@
+:root {
+  --color-bg: #0e0e0e;
+  --color-red: #e63946;
+  --color-gold: #ffd700;
+  --color-white: #fff;
+  --color-overlay: rgba(14, 14, 14, 0.6);
+  --font-main: 'Zen Antique', 'Crimson Pro', serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+header.hero {
+  position: relative;
+  background: url('images/tattoo-oriental-1.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--color-gold);
+}
+.hero-content h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-family: var(--font-main);
+  color: var(--color-gold);
+  text-shadow: 0 2px 8px #000;
+}
+.hero-content p {
+  font-size: 1.5rem;
+  color: var(--color-red);
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 4px #000;
+}
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 50px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btn.whatsapp { background: #25d366; }
+.btn.instagram { background: linear-gradient(45deg, #e1306c, #fdc468); color: #fff; }
+.btn:hover { opacity: 0.85; }
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background: rgba(14,14,14,0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px #0003;
+  margin-top: -80px;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+section h2 {
+  color: var(--color-gold);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-main);
+}
+.about p {
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+.gallery-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery-images img {
+  width: 240px;
+  max-width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0008;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  background: #111;
+}
+.contact ul { list-style: none; margin-top: 1rem; }
+.contact a {
+  color: var(--color-red);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.contact a:hover { text-decoration: underline; }
+footer {
+  text-align: center;
+  background: #000;
+  color: var(--color-gold);
+  padding: 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2.2rem; }
+  main { margin-top: -40px; padding: 2rem 0.5rem; }
+  .gallery-images { flex-direction: column; align-items: center; }
+  .gallery-images img { width: 95vw; max-width: 380px; }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 1.4rem; }
+  .hero-content p { font-size: 1rem; }
+  main { margin-top: -25px; padding: 1rem 0.2rem; }
+  section h2 { font-size: 1.2rem; }
+}
