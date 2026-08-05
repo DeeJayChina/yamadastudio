@@ -1,7 +1,7 @@
 # Yamada Studio Landing Page
 
 ## Descrição
-Landing page responsiva e minimalista para estúdio de tatuagem e body piercing, inspirada na temática oriental, com design elegante e imagens geradas por IA.
+Landing page responsiva e minimalista para trabalhos em corte e gravação a laser de diodo, inspirada na temática oriental, com design elegante e imagens geradas por IA.
 
 ## Como Usar
 
@@ -30,7 +30,7 @@ Landing page responsiva e minimalista para estúdio de tatuagem e body piercing,
 ## Sugestão de Prompts para Geração de Imagens IA
 
 - "Tatuagem oriental tradicional, dragão vermelho e preto, fundo minimalista, alta definição"
-- "Body piercing com estética japonesa, fundo preto e dourado, estilo sofisticado"
+- "Cortes de gravação a laser de diodo com estética japonesa, fundo preto e dourado, estilo sofisticado"
 
 ## Licença
 
